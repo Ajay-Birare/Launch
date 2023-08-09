@@ -124,7 +124,7 @@ if (window.innerWidth > 360) {
   gsap.from(".content .priceType", {
     scale: 0,
     stagger: 0.5,
-    duration: 2,
+    duration: 1,
     scrollTrigger: {
       trigger: ".content .priceType",
       start: "top 70%",
@@ -139,7 +139,7 @@ gsap.from(".advantages .element", {
   scale: 0,
   scale: 0,
   stagger: 1,
-  duration: 2,
+  duration: 1,
   scrollTrigger: {
     trigger: ".advantages .element",
     start: "top 70%",
