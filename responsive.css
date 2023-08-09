@@ -1,0 +1,229 @@
+@media screen and (max-width: 1028px) {
+  nav a {
+    display: none;
+  }
+  button {
+    display: block;
+  }
+  .menuList {
+    display: block;
+  }
+  .menu {
+    list-style: none;
+  }
+
+  .menubtn {
+    display: block;
+  }
+  .dikha {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  #promote {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  #promote .div1 {
+    /* background-color: red; */
+    width: 80%;
+  }
+  #promote .div1 h1 {
+    font-size: 3rem;
+  }
+  #promote img {
+    height: 50vh;
+  }
+  #selling {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    gap: 100px;
+  }
+  #selling .div1 {
+    width: 100%;
+  }
+  #selling .div1 h2,
+  #selling .div1 p,
+  #selling .div1 li,
+  #selling .div1 dfn {
+    width: 100%;
+  }
+  #selling .div2 img {
+    height: 60vh;
+  }
+
+  /* points  */
+  .points {
+    flex-direction: column-reverse;
+  }
+  .points .img .images img {
+    height: 40vh;
+  }
+  .points2 {
+    margin-top: 20%;
+    flex-direction: column;
+  }
+
+  .pricing .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing .content .priceType {
+    /* height: 70vh; */
+  }
+  .pricing .content .priceType {
+    width: 80%;
+  }
+}
+
+/* --------------------- */
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 80%;
+  }
+  #promote img {
+    /* height: 40vh;  */
+  }
+  #selling .div2 img {
+    height: 40vh;
+  }
+  .pricing {
+    height: 200vh;
+    margin-top: 15%;
+    text-align: center;
+  }
+  .advantages {
+    margin-top: 10%;
+  }
+  .advantages .heading {
+    text-align: center;
+  }
+  .advantages .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutUs {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+    gap: 50px;
+  }
+  .aboutUs .teamImg img {
+    height: 300px;
+  }
+  .aboutUs .content {
+    width: 100%;
+  }
+  .aboutUs .content :where(h4, h1) {
+    text-align: center;
+  }
+}
+/* ------------------------- */
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 80%;
+  }
+  #promote img {
+    /* height: 40vh;  */
+  }
+  #selling .div2 img {
+    height: 40vh;
+  }
+  .pricing {
+    height: 200vh;
+    margin-top: 15%;
+    text-align: center;
+  }
+  .advantages {
+    margin-top: 10%;
+  }
+  .advantages .heading {
+    text-align: center;
+  }
+  .advantages .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50%;
+    gap: 50px;
+  }
+}
+/* ----------------------- */
+
+@media screen and (max-width: 360px) {
+  #promote img {
+    height: 25vh;
+  }
+  #promote .div1 h1 {
+    font-size: 2rem;
+  }
+  .menu {
+    width: 50%;
+    margin-left: 50%;
+  }
+  #selling {
+    margin-top: 30%;
+    gap: 100px;
+  }
+
+  #selling .div1 {
+    width: 100%;
+  }
+  #selling .div2 img {
+    height: 25vh;
+  }
+  #selling .div1 h2,
+  #selling .div1 p {
+    width: 100%;
+  }
+  #selling .div2 {
+    display: flex;
+    align-items: center;
+  }
+  .points .img .images img {
+    height: 25vh;
+  }
+
+  .pricing {
+    height: 160vh;
+    margin-top: 25%;
+    margin-bottom: 0%;
+
+    text-align: center;
+  }
+  .pricing .content .priceType {
+    width: 80%;
+  }
+  .advantages {
+    margin-top: 10%;
+  }
+  .advantages .heading {
+    text-align: center;
+  }
+  .advantages .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutUs {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50%;
+    gap: 50px;
+  }
+  .aboutUs .teamImg img {
+    height: 200px;
+  }
+
+  footer {
+    margin-top: 45%;
+  }
+}

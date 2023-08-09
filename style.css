@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300&family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --headline: "Ubuntu", sans-serif;
+  --para: "Raleway", sans-serif;
+  --btn: "Open Sans", sans-serif;
+  --btnColor: #407bff;
+}
+.link {
+  border: 1px solid black;
+  background-color: #407bff;
+  color: black;
+  font-weight: bold;
+  opacity: 2;
+}
+.btn {
+  font-family: var(--btn);
+  background-color: #407bff;
+  border-color: #407bff;
+}
+#main {
+  /* background-color: red; */
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* #main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 0;
+} */
+#main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2% 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* border-bottom: 1px solid #dadada; */
+  background-color: white; /* You can change this to match your design */
+  z-index: 999; /* Adjust the z-index as necessary */
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav .left {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: rgb(195, 167, 167); */
+  gap: 10%;
+
+  /* border: 1px solid black; */
+}
+nav span {
+  color: rgb(39, 130, 165);
+}
+button {
+  display: none;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.right {
+  /* background-color: red; */
+  width: 200px;
+}
+.right a {
+  border: 1px solid #dadada;
+  margin-left: 10px;
+  border-radius: 50px;
+  padding: 4% 8%;
+}
+.right a:hover {
+  border: 1px solid black;
+}
+
+.right a:last-child {
+  color: white;
+  opacity: 1;
+}
+
+.menuList {
+  display: none;
+}
+
+.menu {
+  display: none;
+  /* background-color: rgb(95, 172, 217); */
+  text-align: center;
+  background-color: rgb(233, 239, 243);
+  top: 0;
+  width: 30%;
+  height: 100vh;
+  margin-left: 70%;
+  z-index: 999;
+  position: fixed;
+}
+.menu a {
+}
+.menu li {
+  padding: 2%;
+  /* margin-bottom: 3%; */
+}
+.menu a li:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+.menu a li {
+  border-bottom: 1px solid #dadada;
+}
+.menu a li:hover,
+.menu a:hover {
+  background-color: rgb(29, 122, 152);
+  color: white;
+}
+.dikha {
+  display: none;
+}
+#menuBtn {
+  cursor: pointer;
+}
+#menuBtn:hover {
+  color: red;
+}
+
+#menuBtn2 {
+  cursor: pointer;
+  margin: 20%;
+  display: none;
+}
+
+/* --------------*******--Promote */
+#promote {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+#promote .div1 {
+  /* background-color: red; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#promote img {
+  /* height: 10%; */
+  height: 70vh;
+}
+#promote h1,
+a,
+p {
+  margin-top: 5%;
+}
+
+#promote h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: var(--headline);
+}
+#promote p {
+  font-family: var(--para);
+  opacity: 0.8;
+  line-height: 1.8rem;
+}
+
+.feature {
+  border: 1px solid #dadada;
+  border-radius: 50px;
+  padding: 3% 5%;
+  background-color: #407bff;
+  text-decoration: none;
+  color: white;
+  font-family: var(--btn);
+}
+.feature:hover,
+.price:hover {
+  background-color: rgb(35, 89, 226);
+  color: white;
+}
+
+.price {
+  border: 1px solid #407bff;
+  border-radius: 50px;
+  padding: 3% 5%;
+  color: #407bff;
+  text-decoration: none;
+  font-family: var(--btn);
+}
+
+/* ************************selling services */
+
+#selling {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+#selling .div1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  gap: 15px;
+}
+#selling .div2 img {
+  height: 70vh;
+}
+#selling .div1 h4 {
+  font-family: var(--btn);
+  color: var(--btnColor);
+}
+#selling .div1 p,
+#selling .div1 li {
+  font-family: var(--para);
+  opacity: 0.7;
+  list-style: inside;
+  list-style-type: none;
+  /* background-color: red; */
+  width: 60%;
+  line-height: 2rem;
+}
+dfn {
+  width: 70%;
+  line-height: 1.5rem;
+  font-family: var(--para);
+}
+
+#selling li::before {
+  content: "\27A4";
+  margin-right: 10px;
+  color: var(--btnColor);
+}
+#selling .div1 h2 {
+  font-family: var(--headline);
+  font-size: 2.5rem;
+  font-weight: 100;
+  width: 50%;
+}
+
+/* **************************  points  */
+
+.points {
+  display: flex;
+  margin-top: 20%;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+}
+
+.points .img .images img {
+  height: 70vh;
+}
+.points .content {
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: start;
+  display: flex;
+  padding: 2% 3%;
+  border-radius: 10px;
+}
+.points .content:hover {
+  background-color: rgb(245, 245, 245);
+}
+.points .content .icon img,
+.points2 .content2 .div1 img {
+  height: 40px;
+}
+.points .content h3,
+.content2 h3 {
+  font-family: var(--headline);
+  font-weight: 400;
+}
+.points .content p,
+.content2 p {
+  font-family: var(--para);
+  opacity: 0.5;
+}
+
+/* --------- */
+
+.points2 {
+  display: flex;
+  align-items: center;
+  margin-top: 15%;
+  gap: 10px;
+}
+.points2 .content2 {
+  background-color: rgb(228, 233, 240);
+  border-radius: 10px;
+  padding: 1% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* -=0-=-----------------Pricing  */
+
+.pricing {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 60px;
+  height: 0vh;
+}
+.pricing .content {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+.pricing .content .priceType {
+  /* background-color: rgb(229, 244, 246); */
+  box-shadow: 1px 1px 15px 0.5px rgb(149, 138, 138);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 20px;
+  padding: 3%;
+  width: 25%;
+  /* height: 70vh; */
+}
+.pricing .content .priceType h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--para);
+  color: #407bff;
+}
+.pricing .content .priceType li {
+  list-style-position: inside;
+  list-style-type: none;
+  font-size: 1rem;
+  margin: 5%;
+}
+.pricing .content .priceType a {
+  border: 1px solid #dadada;
+  margin-left: 10px;
+  border-radius: 50px;
+  padding: 4% 8%;
+  text-decoration: none;
+  color: white;
+}
+.pricing .content .priceType a:hover {
+  background-color: rgb(149, 196, 221);
+  color: black;
+}
+.pricing .content li::before {
+  /* content: "\27A4"; */
+  margin-right: 10px;
+  color: var(--btnColor);
+}
+
+.pricing .head h1 {
+  font-family: var(--para);
+  font-size: 4rem;
+  font-weight: 400;
+}
+.pricing .head p,
+.pricing li {
+  font-family: var(--para);
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+/* ************Advanteges */
+.advantages {
+  margin-top: 70%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.advantages .content {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.advantages .content img {
+  height: 50px;
+}
+.advantages .element {
+  background-color: rgb(210, 227, 228);
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  padding: 5%;
+}
+.advantages .element .div2 {
+  display: flex;
+  flex-direction: column;
+}
+.advantages :where(h1, h3) {
+  font-family: var(--headline);
+  font-weight: 400;
+}
+.advantages p {
+  font-family: var(--para);
+  opacity: 0.7;
+}
+
+.advantages a {
+  text-decoration: none;
+  color: var(--btnColor);
+}
+.advantages a:hover {
+  color: black;
+}
+
+/* about  us  */
+.aboutUs {
+  /* background-color: rgb(208, 225, 241); */
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.aboutUs ul li {
+  list-style-position: inside;
+  list-style: none;
+}
+
+.aboutUs ul li::before {
+  content: "\27A4";
+  margin-right: 10px;
+  color: var(--btnColor);
+}
+.aboutUs .teamImg img {
+  height: 400px;
+}
+
+.aboutUs .content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aboutUs .content .count {
+  display: flex;
+  gap: 50px;
+}
+
+.aboutUs :where(h1, h4) {
+  font-weight: 100;
+  font-family: var(--headline);
+}
+.aboutUs :where(p, li) {
+  font-family: var(--para);
+  opacity: 0.5;
+  line-height: 2rem;
+}
+
+.aboutUs h4 {
+  color: var(--btnColor);
+}
+
+footer {
+  text-align: center;
+  font-family: var(--para);
+  opacity: 0.6;
+  font-size: 1.2rem;
+  margin-top: 10%;
+}
